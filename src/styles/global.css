@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply underline;
+  }
+  nav {
+    @apply flex justify-center pb-8 space-x-4;
+  }
+  nav a {
+    @apply font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900;
+  }
+}
+
+@layer components {
+  .codeStyles {
+    @apply text-amber-300 bg-amber-50 rounded text-xl p-4;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card {
+    @apply max-w-md mx-auto overflow-hidden md:max-w-full;
+  }
+
+  .pre-card-image {
+    @apply md:shrink-0 md:hidden;
+  }
+  .pre-card-image img {
+    @apply h-48 w-48 object-cover md:h-full md:w-full rounded-full;
+  }
+
+  .post-card-image {
+    @apply flex-auto md:shrink-0 hidden md:inline-flex;
+  }
+  .post-card-image img {
+    @apply object-cover md:w-64 lg:w-72 xl:max-w-xl rounded-full;
+  }
+
+  .card-content {
+    @apply flex-auto p-6 lg:p-8 self-center;
+  }
+  .title {
+    @apply uppercase tracking-wide text-sm font-semibold text-blue-600;
+  }
+  .subtitle {
+    @apply mt-1 text-lg leading-tight font-medium text-black;
+  }
+  .text-content {
+    @apply mt-2 text-gray-500;
+  }
+
+  .card-footer {
+    @apply grid grid-cols-1 gap-4 py-8 justify-center;
+  }
+  .card-footer div {
+    @apply col-start-1 space-x-6 text-center;
+  }
+}
