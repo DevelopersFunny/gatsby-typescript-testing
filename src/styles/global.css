@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+@import './customComponents.css';
+
+@import 'tailwindcss/utilities';
 
 @layer base {
   h1 {
@@ -73,5 +76,17 @@
   }
   .card-footer div {
     @apply col-start-1 space-x-6 text-center;
+  }
+}
+
+@layer utilities {
+  .success {
+    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600;
+  }
+  .warning {
+    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600;
+  }
+  .error {
+    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700;
   }
 }

@@ -94,7 +94,7 @@ export function Counter() {
   return (
     <>
       <p>El contador es: {counter}</p>
-      <Button variant="primary" label="Incrementar" onClick={increment} />
+      <Button variant="contained" label="Incrementar" onClick={increment} />
     </>
   )
 }
