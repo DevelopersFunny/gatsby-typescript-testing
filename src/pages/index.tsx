@@ -94,7 +94,12 @@ export function Counter() {
   return (
     <>
       <p>El contador es: {counter}</p>
-      <Button variant="primary" label="Incrementar" onClick={increment} />
+      <Button
+        variant="contained"
+        color="error"
+        label="Incrementar"
+        onClick={increment}
+      />
     </>
   )
 }
