@@ -10,7 +10,7 @@ interface LayoutProps {
 
 export const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
-    <div className="container mx-auto">
+    <div className="container generalLayout">
       <Seo title={pageTitle} />
       <Title pageTitle={pageTitle} />
       <nav>

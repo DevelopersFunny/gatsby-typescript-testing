@@ -7,23 +7,9 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import tw from 'twin.macro'
-import styled from 'styled-components'
 import Layout from '../components/templates/general'
 import { Button } from '../components/atoms/Button'
 import logo from '../images/logo.svg'
-
-/**
- * Estilando con twin.macro (tailwindcss en js) y styled components
- */
-const LayoutClass = styled.div`
-  ${tw`
-    flex
-    flex-col
-    items-center
-    justify-center
-  `}
-`
 
 /**
  * Creando un context de ejemplo haciendo uso de typescript
@@ -113,14 +99,12 @@ export default function Home() {
 
   return (
     <Layout pageTitle={pageTitle}>
-      <LayoutClass>
-        <CounterContextProvider>
-          <img src={logo} className="App-logo" alt="logo" />
-          <Counter />
-          <p>Proyecto creado en Gatsby con TypeScript</p>
-          <p>Testing haciendo uso de StoryBook, Jest y React Testing Library</p>
-        </CounterContextProvider>
-      </LayoutClass>
+      <CounterContextProvider>
+        <img src={logo} className="App-logo" alt="logo" />
+        <Counter />
+        <p>Proyecto creado en Gatsby con TypeScript</p>
+        <p>Testing haciendo uso de StoryBook, Jest y React Testing Library</p>
+      </CounterContextProvider>
     </Layout>
   )
 }
