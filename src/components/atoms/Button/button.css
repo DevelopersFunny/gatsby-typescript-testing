@@ -1,0 +1,27 @@
+.btn {
+  @apply rounded-full focus:outline-none focus:ring text-sm px-3 py-2;
+}
+
+.text {
+  @apply bg-transparent;
+}
+.contained {
+  @apply text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-600 focus:bg-blue-600/90;
+}
+.outlined {
+  @apply border-2 border-blue-600 hover:border-blue-700 active:border-blue-600 focus:border-blue-600/90;
+}
+
+.small {
+  @apply text-sm px-2 py-1;
+}
+.normal {
+  @apply text-base px-3 py-2;
+}
+.large {
+  @apply text-lg px-4 py-3;
+}
+
+.secondary {
+  @apply text-white bg-gray-600 hover:bg-gray-700 active:bg-gray-600 focus:bg-gray-600/90 ring-gray-700;
+}
