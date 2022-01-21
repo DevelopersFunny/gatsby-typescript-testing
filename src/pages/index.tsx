@@ -102,8 +102,8 @@ export default function Home() {
       <CounterContextProvider>
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        <p>Proyecto creado en Gatsby con TypeScript</p>
-        <p>Testing haciendo uso de StoryBook, Jest y React Testing Library</p>
+        <p>Proyecto creado en Gatsby con TypeScript.</p>
+        <p>Testing haciendo uso de StoryBook, Jest y React Testing Library.</p>
       </CounterContextProvider>
     </Layout>
   )
