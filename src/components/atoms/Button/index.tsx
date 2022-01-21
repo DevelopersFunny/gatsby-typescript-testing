@@ -22,7 +22,9 @@ export function Button({
   return (
     <button
       type="button"
-      className={`btn ${variant} ${size} ${color}`}
+      className={`btn ${variant ? variant : ''} ${size ? size : ''} ${
+        color ? color : ''
+      }`}
       style={{ backgroundColor, color: textColor }}
       onClick={onClick}
     >
