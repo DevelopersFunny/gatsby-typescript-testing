@@ -33,15 +33,9 @@
     "test:coverage": "jest --watchAll --coverage",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
   },
-  "babelMacros": {
-    "twin": {
-      "preset": "styled-components"
-    }
-  },
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
-    "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.5.4",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-manifest": "^4.5.2",
