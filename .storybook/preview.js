@@ -1,4 +1,4 @@
-import '../src/styles/global.css'
+import '../src/styles/global.css' // Tailwindcss
 import { withTests } from '@storybook/addon-jest'
 import results from '../.jest-test-results.json'
 import { action } from '@storybook/addon-actions'
