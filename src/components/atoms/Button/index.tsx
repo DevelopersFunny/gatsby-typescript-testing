@@ -1,24 +1,26 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-interface ButtonProps {
+export interface IButtonProps {
   variant?: 'text' | 'contained' | 'outlined'
   backgroundColor?: string
   color?: 'success' | 'warning' | 'error' | 'secondary'
   size?: 'small' | 'normal' | 'large'
-  label: string
   textColor?: string
   onClick?: () => void
+  disabled?: boolean
+  children: ReactNode
 }
 
-export function Button({
+export const Button = ({
   variant,
   size,
-  label,
   backgroundColor,
   color,
   textColor,
   onClick,
-}: ButtonProps) {
+  children,
+  disabled,
+}: IButtonProps) => {
   return (
     <button
       type="button"
@@ -27,8 +29,9 @@ export function Button({
       }`}
       style={{ backgroundColor, color: textColor }}
       onClick={onClick}
+      disabled={disabled}
     >
-      {label}
+      {children}
     </button>
   )
 }

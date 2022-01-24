@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof Button> = args => <Button {...args} />
 
 export const Contained = Template.bind({})
 Contained.args = {
-  label: 'Contained Button',
+  children: 'Contained Button',
   variant: 'contained',
 }
 Contained.parameters = {
@@ -23,7 +23,7 @@ Contained.parameters = {
 }
 export const Text = Template.bind({})
 Text.args = {
-  label: 'Text Button',
+  children: 'Text Button',
   variant: 'text',
 }
 Text.parameters = {
@@ -31,7 +31,7 @@ Text.parameters = {
 }
 export const Outlined = Template.bind({})
 Outlined.args = {
-  label: 'Outlined Button',
+  children: 'Outlined Button',
   variant: 'outlined',
 }
 Outlined.parameters = {
@@ -40,7 +40,7 @@ Outlined.parameters = {
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-  label: 'Secondary Button',
+  children: 'Secondary Button',
   color: 'secondary',
 }
 Secondary.parameters = {
@@ -48,7 +48,7 @@ Secondary.parameters = {
 }
 export const Success = Template.bind({})
 Success.args = {
-  label: 'Success Button',
+  children: 'Success Button',
   color: 'success',
 }
 Success.parameters = {
@@ -56,7 +56,7 @@ Success.parameters = {
 }
 export const Warning = Template.bind({})
 Warning.args = {
-  label: 'Warning Button',
+  children: 'Warning Button',
   color: 'warning',
 }
 Warning.parameters = {
@@ -64,7 +64,7 @@ Warning.parameters = {
 }
 export const Error = Template.bind({})
 Error.args = {
-  label: 'Error Button',
+  children: 'Error Button',
   color: 'error',
 }
 Error.parameters = {
@@ -73,7 +73,7 @@ Error.parameters = {
 
 export const Small = Template.bind({})
 Small.args = {
-  label: 'Small Button',
+  children: 'Small Button',
   size: 'small',
   variant: 'contained',
 }
@@ -82,7 +82,7 @@ Small.parameters = {
 }
 export const Normal = Template.bind({})
 Normal.args = {
-  label: 'Normal Button',
+  children: 'Normal Button',
   size: 'normal',
   variant: 'contained',
 }
@@ -91,7 +91,7 @@ Normal.parameters = {
 }
 export const Large = Template.bind({})
 Large.args = {
-  label: 'Large Button',
+  children: 'Large Button',
   size: 'large',
   variant: 'contained',
 }
@@ -99,18 +99,18 @@ Large.parameters = {
   jest: ['button.test.tsx'],
 }
 
-export const CustomLabel = Template.bind({})
-CustomLabel.args = {
-  label: 'Custom label',
+export const CustomText = Template.bind({})
+CustomText.args = {
+  children: 'Custom text',
   variant: 'contained',
 }
-CustomLabel.parameters = {
+CustomText.parameters = {
   jest: ['button.test.tsx'],
 }
 export const CustomBackgroundColor = Template.bind({})
 CustomBackgroundColor.args = {
   backgroundColor: '#ee6d6d',
-  label: 'Custom Color',
+  children: 'Custom Color',
 }
 CustomBackgroundColor.parameters = {
   jest: ['button.test.tsx'],
@@ -118,7 +118,7 @@ CustomBackgroundColor.parameters = {
 export const CustomTextColor = Template.bind({})
 CustomTextColor.args = {
   textColor: 'green',
-  label: 'Custom Color',
+  children: 'Custom Color',
 }
 CustomTextColor.parameters = {
   jest: ['button.test.tsx'],
