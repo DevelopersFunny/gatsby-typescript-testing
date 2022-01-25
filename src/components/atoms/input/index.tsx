@@ -8,6 +8,7 @@ export interface InputProps {
   minLength?: number | 4
   maxLength?: number | 8
   className?: string
+  variant?: 'outlined' | 'filled' | 'standard'
 }
 
 export function Input({
@@ -18,6 +19,7 @@ export function Input({
   minLength,
   placeholder,
   type,
+  variant,
 }: InputProps) {
   return (
     <>
@@ -28,7 +30,17 @@ export function Input({
         minLength={minLength}
         maxLength={maxLength}
         placeholder={placeholder}
-        className={className ? className : 'normalInput'}
+        className={
+          className
+            ? className + ' ' + 'LabelInput'
+            : variant === 'outlined'
+            ? 'outlineInput'
+            : variant === 'filled'
+            ? 'filledInput'
+            : variant === 'standard'
+            ? 'standardInput'
+            : 'standardInput'
+        }
       />
     </>
   )
