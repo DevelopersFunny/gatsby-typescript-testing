@@ -2,7 +2,18 @@ import React from 'react'
 import { Input, InputProps } from '../../atoms/input'
 import { Label } from '../../atoms/Label'
 
-export const InputLabel = ({ id, name, type, placeholder }: InputProps) => {
+interface IInputLabelProps extends InputProps {
+  label: string
+}
+
+export const InputLabel = ({
+  id,
+  maxLength,
+  minLength,
+  name,
+  type,
+  label,
+}: IInputLabelProps) => {
   return (
     <>
       <div className="relative">
@@ -10,13 +21,16 @@ export const InputLabel = ({ id, name, type, placeholder }: InputProps) => {
           id={id}
           name={name}
           type={type}
-          placeholder={placeholder}
+          placeholder={label}
+          minLength={minLength}
+          maxLength={maxLength}
           className="peer"
         />
         <Label
           htmlFor={id}
           className="
             absolute
+            cursor-text
             h-10
             w-full
             pl-9 pr-3
@@ -32,7 +46,7 @@ export const InputLabel = ({ id, name, type, placeholder }: InputProps) => {
             peer-focus:text-gray-600 
             peer-focus:text-sm"
         >
-          {placeholder}
+          {label}
         </Label>
       </div>
     </>
