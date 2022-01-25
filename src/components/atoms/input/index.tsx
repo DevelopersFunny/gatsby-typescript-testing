@@ -1,15 +1,17 @@
 import React from 'react'
 
-interface InputProps {
+export interface InputProps {
   type: 'text' | 'email' | 'password'
   id: string
   name: string
   placeholder?: string | 'Please write a placeholder'
   minLength?: number | 4
   maxLength?: number | 8
+  className?: string
 }
 
 export function Input({
+  className,
   id,
   name,
   maxLength,
@@ -26,6 +28,7 @@ export function Input({
         minLength={minLength}
         maxLength={maxLength}
         placeholder={placeholder}
+        className={className ? className : 'normalInput'}
       />
     </>
   )

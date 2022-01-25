@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Label> = args => <Label {...args} />
 
 export const LabelName = Template.bind({})
 LabelName.args = {
-  name: 'Label',
+  children: 'Label',
 }
