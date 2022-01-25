@@ -1,4 +1,5 @@
 @import '../components/atoms/Button/button.css';
 @import '../components/atoms/input/input.css';
 @import '../components/atoms/Label/label.css';
+@import '../components/molecules/InputLabel/inputLabel.css';
 @import '../components/templates/general/generalLayout.css';
