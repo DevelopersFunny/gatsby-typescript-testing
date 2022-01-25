@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-interface LabelProps {
-  name: string
+export interface LabelProps {
+  className?: string
   backgroundColor?: string
   textColor?: string
+  htmlFor?: string
+  children?: ReactNode
 }
 
-export function Label({ backgroundColor, name, textColor }: LabelProps) {
+export function Label({
+  backgroundColor,
+  className,
+  htmlFor,
+  children,
+  textColor,
+}: LabelProps) {
   return (
     <>
-      <label className="block">
-        <span
-          className="labelName"
-          style={{ backgroundColor, color: textColor }}
-        >
-          {name}
-        </span>
+      <label
+        htmlFor={htmlFor}
+        className={className ? className : 'labelName'}
+        style={{ backgroundColor, color: textColor }}
+      >
+        {children}
       </label>
     </>
   )
