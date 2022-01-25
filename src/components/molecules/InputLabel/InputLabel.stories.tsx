@@ -16,5 +16,5 @@ InputLabelName.args = {
   name: 'inputlabel',
   id: 'inputlabel',
   type: 'text',
-  placeholder: 'Input label',
+  label: 'Input label',
 }

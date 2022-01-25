@@ -1,7 +1,15 @@
 import React from 'react'
 
-export interface InputProps {
-  type: 'text' | 'email' | 'password'
+export interface IInputProps {
+  type:
+    | 'text'
+    | 'email'
+    | 'password'
+    | 'file'
+    | 'range'
+    | 'number'
+    | 'radio'
+    | 'checkbox'
   id: string
   name: string
   placeholder?: string | 'Please write a placeholder'
@@ -9,6 +17,7 @@ export interface InputProps {
   maxLength?: number | 8
   className?: string
   variant?: 'outlined' | 'filled' | 'standard'
+  disabled?: boolean
 }
 
 export function Input({
@@ -20,7 +29,8 @@ export function Input({
   placeholder,
   type,
   variant,
-}: InputProps) {
+  disabled,
+}: IInputProps) {
   return (
     <>
       <input
@@ -30,6 +40,7 @@ export function Input({
         minLength={minLength}
         maxLength={maxLength}
         placeholder={placeholder}
+        disabled={disabled}
         className={
           className
             ? className + ' ' + 'LabelInput'
@@ -39,6 +50,8 @@ export function Input({
             ? 'filledInput'
             : variant === 'standard'
             ? 'standardInput'
+            : type === 'file'
+            ? 'fileInput'
             : 'standardInput'
         }
       />
