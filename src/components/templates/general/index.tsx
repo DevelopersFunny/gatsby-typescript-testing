@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import { Link } from 'gatsby'
+import GlobalStyles from '../../../styles/GlobalStyles'
 import Title from '../../atoms/Title'
 import Seo from '../../atoms/Seo'
 
@@ -27,6 +28,7 @@ export const Layout = ({ pageTitle, children }: LayoutProps) => {
         <h1 className="flex justify-center pb-8 text-3xl font-bold">
           {pageTitle}
         </h1>
+        <GlobalStyles />
         {children}
       </main>
     </div>
