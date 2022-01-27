@@ -10,6 +10,23 @@ import React, {
 import Layout from '../components/templates/general'
 import { Button } from '../components/atoms/Button'
 import logo from '../images/logo.svg'
+import tw, { css, styled } from 'twin.macro'
+
+/**
+ * Ejemplo de estilos con emotion y twin.macro
+ */
+const CounterStyled = styled.span`
+  ${tw`
+    text-center
+    font-bold
+    text-blue-600
+    border-b-2
+    border-b-blue-600
+  `}
+`
+const imageStyle = css({
+  ...tw`text-center`,
+})
 
 /**
  * Creando un context de ejemplo haciendo uso de typescript
@@ -79,8 +96,12 @@ export function Counter() {
 
   return (
     <>
-      <p>El contador es: {counter}</p>
-      <Button variant="contained" label="Incrementar" onClick={increment} />
+      <p>
+        El contador es: <CounterStyled>{counter}</CounterStyled>
+      </p>
+      <Button variant="contained" onClick={increment}>
+        Incrementar
+      </Button>
     </>
   )
 }
@@ -100,10 +121,14 @@ export default function Home() {
   return (
     <Layout pageTitle={pageTitle}>
       <CounterContextProvider>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>Proyecto creado en Gatsby con TypeScript.</p>
-        <p>Testing haciendo uso de StoryBook, Jest y React Testing Library.</p>
+        <div css={imageStyle}>
+          <img src={logo} className="App-logo" alt="logo" />
+          <Counter />
+          <p>Proyecto creado en Gatsby con TypeScript.</p>
+          <p>
+            Testing haciendo uso de StoryBook, Jest y React Testing Library.
+          </p>
+        </div>
       </CounterContextProvider>
     </Layout>
   )

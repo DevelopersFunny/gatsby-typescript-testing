@@ -16,7 +16,6 @@ module.exports = {
       },
     },
     '@storybook/addon-jest',
-    'tailwind-tales-addon',
   ],
   framework: '@storybook/react',
   core: {
