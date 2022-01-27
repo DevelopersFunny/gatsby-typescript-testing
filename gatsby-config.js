@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://developersfunny.github.io',
-    title: 'Portafolio Shadito',
-    description: 'A project with React GatsbyJS and TypeScript with Testing using Atomic Design',
-    author: 'Developers Funny',
+    title: 'Developers Funny',
+    description:
+      'A project with React GatsbyJS and TypeScript with Testing using Atomic Design',
+    author: 'Shadito',
   },
   pathPrefix: 'gatsby-typescript-testing',
   plugins: [
@@ -32,8 +33,7 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     'gatsby-plugin-typescript',
-    'gatsby-plugin-styled-components',
-    'gatsby-transformer-remark',
+    'gatsby-plugin-emotion',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
