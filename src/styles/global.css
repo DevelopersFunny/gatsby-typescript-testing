@@ -85,12 +85,15 @@
 
 @layer utilities {
   .success {
-    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600;
+    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600 !important;
   }
   .warning {
-    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600;
+    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600 !important;
   }
   .error {
-    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700;
+    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700 !important;
+  }
+  .secondary {
+    @apply text-white bg-gray-600 hover:bg-gray-700 active:bg-gray-600 focus:bg-gray-600/90 ring-gray-700 !important;
   }
 }

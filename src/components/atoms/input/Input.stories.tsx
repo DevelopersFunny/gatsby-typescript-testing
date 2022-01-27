@@ -15,12 +15,37 @@ InputRequired.args = {
   id: 'name',
   name: 'name',
 }
+export const InputOutlined = Template.bind({})
+InputOutlined.args = {
+  type: 'text',
+  id: 'name',
+  name: 'name',
+  placeholder: 'Please write a placeholder',
+  variant: 'outlined',
+}
+export const InputFilled = Template.bind({})
+InputFilled.args = {
+  type: 'text',
+  id: 'name',
+  name: 'name',
+  placeholder: 'Please write a placeholder',
+  variant: 'filled',
+}
+export const InputStandard = Template.bind({})
+InputStandard.args = {
+  type: 'text',
+  id: 'name',
+  name: 'name',
+  placeholder: 'Please write a placeholder',
+  variant: 'standard',
+}
 export const InputPlaceholder = Template.bind({})
 InputPlaceholder.args = {
   type: 'text',
   id: 'name',
   name: 'name',
   placeholder: 'Please write a placeholder',
+  variant: 'standard',
 }
 export const InputMinLength = Template.bind({})
 InputMinLength.args = {
