@@ -99,7 +99,7 @@ export function Counter() {
       <p>
         El contador es: <CounterStyled>{counter}</CounterStyled>
       </p>
-      <Button variant="contained" onClick={increment}>
+      <Button variant="contained" size="small" onClick={increment}>
         Incrementar
       </Button>
     </>

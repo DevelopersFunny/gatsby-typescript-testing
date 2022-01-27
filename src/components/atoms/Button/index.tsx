@@ -24,10 +24,10 @@ const StyledButton = styled.button(({ variant, size }: IButtonProps) => [
     ? tw`border-2 border-blue-600 hover:border-blue-700 active:border-blue-600 focus:border-blue-600/90`
     : tw`bg-transparent`,
   size === 'small'
-    ? tw`text-xs px-2 py-1`
+    ? tw`text-sm px-2 py-1`
     : size === 'large'
     ? tw`text-lg px-4 py-3`
-    : tw`text-sm px-3 py-2`,
+    : tw`text-base px-3 py-2`,
 ])
 
 export const Button = ({

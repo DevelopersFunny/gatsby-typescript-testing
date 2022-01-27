@@ -46,21 +46,18 @@ describe('Button render with props', () => {
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Contained.args?.children)
     expect(ButtonElement).toHaveTextContent(/contained/i)
-    expect(ButtonElement).toHaveClass('contained')
   })
   it('should render text button', () => {
     render(<Text />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Text.args?.children)
     expect(ButtonElement).toHaveTextContent(/text/i)
-    expect(ButtonElement).toHaveClass('text')
   })
   it('should render custom outlined button', () => {
     render(<Outlined />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Outlined.args?.children)
     expect(ButtonElement).toHaveTextContent(/outlined/i)
-    expect(ButtonElement).toHaveClass('outlined')
   })
   it('should render secondary button', () => {
     render(<Secondary />)
@@ -95,21 +92,18 @@ describe('Button render with props', () => {
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Small.args?.children)
     expect(ButtonElement).toHaveTextContent(/small/i)
-    expect(ButtonElement).toHaveClass('small')
   })
   it('should render normal button', () => {
     render(<Normal />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Normal.args?.children)
     expect(ButtonElement).toHaveTextContent(/normal/i)
-    expect(ButtonElement).toHaveClass('normal')
   })
   it('should render large button', () => {
     render(<Large />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Large.args?.children)
     expect(ButtonElement).toHaveTextContent(/large/i)
-    expect(ButtonElement).toHaveClass('large')
   })
   it('should render a custom children button', () => {
     render(<CustomText children="Custom text" />)
