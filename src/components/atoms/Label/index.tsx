@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
+import tw, { styled } from 'twin.macro'
 
-export interface LabelProps {
+export interface ILabelProps {
   className?: string
   backgroundColor?: string
   textColor?: string
@@ -8,22 +9,29 @@ export interface LabelProps {
   children?: ReactNode
 }
 
+const StyledLabel = styled.label([
+  tw`
+    block
+    text-sm
+    font-medium
+    text-gray-700
+  `,
+])
+
 export function Label({
   backgroundColor,
   className,
   htmlFor,
   children,
   textColor,
-}: LabelProps) {
+}: ILabelProps) {
   return (
-    <>
-      <label
-        htmlFor={htmlFor}
-        className={className ? className : 'labelName'}
-        style={{ backgroundColor, color: textColor }}
-      >
-        {children}
-      </label>
-    </>
+    <StyledLabel
+      htmlFor={htmlFor}
+      className={className}
+      style={{ backgroundColor, color: textColor }}
+    >
+      {children}
+    </StyledLabel>
   )
 }
