@@ -104,3 +104,98 @@ exports[`ButtonProperties Atoms/Input Input Standard 1`] = `
   type="text"
 />
 `;
+
+exports[`Stories storyshots Atoms/Input Input Checkbox 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="checkbox"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input File 1`] = `
+<input
+  className="css-44zl3k"
+  id="name"
+  name="name"
+  type="file"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Filled 1`] = `
+<input
+  className="css-p4oc1c"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Min Length 1`] = `
+<input
+  className="css-1xsr6mf"
+  id="name"
+  minLength={4}
+  name="name"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Outlined 1`] = `
+<input
+  className="css-6ui80c"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Placeholder 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Radio 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="radio"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Range 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="range"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Required 1`] = `
+<input
+  className="css-1xsr6mf"
+  id="name"
+  name="name"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Standard 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;

@@ -13,3 +13,17 @@ exports[`ButtonProperties Atoms/Label Label Name 1`] = `
   Label
 </label>
 `;
+
+exports[`Stories storyshots Atoms/Label Label Name 1`] = `
+<label
+  className="css-72egtx"
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "color": undefined,
+    }
+  }
+>
+  Label
+</label>
+`;

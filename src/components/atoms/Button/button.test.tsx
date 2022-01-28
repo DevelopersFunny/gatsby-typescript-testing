@@ -2,28 +2,12 @@ import React from 'react'
 import * as stories from './Button.stories'
 import { composeStories } from '@storybook/testing-react'
 import { render, screen } from '@testing-library/react'
-const screenshotTest = require('../../../utils/screenshotTest')
 
-const setup = {
-  'atoms-button': [
-    'contained',
-    'text',
-    'outlined',
-    'secondary',
-    'success',
-    'warning',
-    'error',
-    'small',
-    'normal',
-    'large',
-    'custom-text',
-    'custom-background-color',
-    'custom-text-color',
-  ],
-}
-
-screenshotTest(setup)
-
+/**
+ * Every component that is returned maps 1:1 with the stories,
+ * but they already contain all decorators from story level,
+ * meta level and global level.
+ */
 const {
   Contained,
   Text,
