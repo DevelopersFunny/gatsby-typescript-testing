@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ButtonProperties Atoms/Input Input Checkbox 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="checkbox"
+/>
+`;
+
+exports[`ButtonProperties Atoms/Input Input File 1`] = `
+<input
+  className="css-44zl3k"
+  id="name"
+  name="name"
+  type="file"
+/>
+`;
+
 exports[`ButtonProperties Atoms/Input Input Filled 1`] = `
 <input
   className="css-p4oc1c"
@@ -47,6 +65,24 @@ exports[`ButtonProperties Atoms/Input Input Placeholder 1`] = `
   name="name"
   placeholder="Please write a placeholder"
   type="text"
+/>
+`;
+
+exports[`ButtonProperties Atoms/Input Input Radio 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="radio"
+/>
+`;
+
+exports[`ButtonProperties Atoms/Input Input Range 1`] = `
+<input
+  className="css-16xa3tr"
+  id="name"
+  name="name"
+  type="range"
 />
 `;
 

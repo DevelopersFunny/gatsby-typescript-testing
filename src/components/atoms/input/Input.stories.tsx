@@ -54,10 +54,31 @@ InputMinLength.args = {
   name: 'name',
   minLength: 4,
 }
-export const InputMaxLength = Template.bind({})
-InputMaxLength.args = {
-  type: 'text',
+export const InputFile = Template.bind({})
+InputFile.args = {
+  type: 'file',
   id: 'name',
   name: 'name',
-  maxLength: 8,
+  variant: 'standard',
+}
+export const InputRange = Template.bind({})
+InputRange.args = {
+  type: 'range',
+  id: 'name',
+  name: 'name',
+  variant: 'standard',
+}
+export const InputRadio = Template.bind({})
+InputRadio.args = {
+  type: 'radio',
+  id: 'name',
+  name: 'name',
+  variant: 'standard',
+}
+export const InputCheckbox = Template.bind({})
+InputCheckbox.args = {
+  type: 'checkbox',
+  id: 'name',
+  name: 'name',
+  variant: 'standard',
 }
