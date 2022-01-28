@@ -21,7 +21,7 @@ interface LayoutQuery {
   }
 }
 
-const PureTitle: FC<LayoutProps> = ({ data, pageTitle, siteTitle }) => {
+export const PureTitle: FC<LayoutProps> = ({ data, pageTitle, siteTitle }) => {
   /* istanbul ignore next */
   if (!data?.site.siteMetadata) {
     throw new Error('El sitio no tiene los Metadatos completos')

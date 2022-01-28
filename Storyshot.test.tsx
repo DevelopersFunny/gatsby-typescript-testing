@@ -16,7 +16,7 @@ initStoryshots({
     // This puts all my *.snaps.js in a __snapshots__ folder next to my stories folder, the default is to have them next to the *.stories.js files themselves
     snapshotsDirName: '__snapshots__',
     // This just sets the extension to *.snap.js which I like
-    snapshotExtension: '.snap.js',
+    snapshotExtension: '.tsx.snap',
     storiesExtensions: ['.js', '.jsx', '.ts', '.tsx'],
   }),
 })
