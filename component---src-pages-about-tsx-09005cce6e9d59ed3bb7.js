@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_typescript_testing=self.webpackChunkgatsby_typescript_testing||[]).push([[49],{564:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var a=n(7294),r=n(905);function c(){return a.createElement(r.Z,{pageTitle:"Acerca de"},a.createElement("p",null,"Información personal va a ir aquí"))}}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-09005cce6e9d59ed3bb7.js.map
