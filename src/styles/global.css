@@ -15,6 +15,9 @@
   nav a {
     @apply font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900;
   }
+  /*input {
+    @apply placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm;
+  }*/
 }
 
 @layer components {
@@ -25,6 +28,7 @@
   .App-logo {
     height: 40vmin;
     pointer-events: none;
+    display: initial;
   }
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -81,12 +85,15 @@
 
 @layer utilities {
   .success {
-    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600;
+    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600 !important;
   }
   .warning {
-    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600;
+    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600 !important;
   }
   .error {
-    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700;
+    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700 !important;
+  }
+  .secondary {
+    @apply text-white bg-gray-600 hover:bg-gray-700 active:bg-gray-600 focus:bg-gray-600/90 ring-gray-700 !important;
   }
 }

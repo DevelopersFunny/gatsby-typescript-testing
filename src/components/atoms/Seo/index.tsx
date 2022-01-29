@@ -10,7 +10,13 @@ interface SEOProps {
 }
 
 function Seo({ description = '', lang = 'en', meta = [], title }: SEOProps) {
-  const { site }: any = useStaticQuery(
+  const {
+    site,
+  }: {
+    site: {
+      siteMetadata: { title: string; description: string; author: string }
+    }
+  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -33,7 +39,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: SEOProps) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : ''}
       meta={[
         {
           name: `description`,

@@ -11,6 +11,7 @@ export default {
   globals: {
     __PATH_PREFIX__: ``,
   },
+  // roots: ['<rootDir>/src/components/'],
   testURL: `http://localhost`,
   setupFiles: [`<rootDir>/loadershim.js`],
   clearMocks: true,
