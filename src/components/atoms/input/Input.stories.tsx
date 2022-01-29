@@ -54,6 +54,20 @@ InputMinLength.args = {
   name: 'name',
   minLength: 4,
 }
+export const InputMaxLength = Template.bind({})
+InputMaxLength.args = {
+  type: 'text',
+  id: 'name',
+  name: 'name',
+  maxLength: 8,
+}
+export const InputNumber = Template.bind({})
+InputNumber.args = {
+  type: 'number',
+  id: 'name',
+  name: 'name',
+  variant: 'standard',
+}
 export const InputFile = Template.bind({})
 InputFile.args = {
   type: 'file',
