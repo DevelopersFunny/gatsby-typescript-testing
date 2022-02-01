@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://developersfunny.github.io',
-    title: 'Developers Funny',
+    title: 'GatsbyJS TypeScript Testing',
     description:
       'A project with React GatsbyJS and TypeScript with Testing using Atomic Design',
-    author: 'Shadito',
+    author: 'Developers Funny',
   },
   pathPrefix: 'gatsby-typescript-testing',
   plugins: [

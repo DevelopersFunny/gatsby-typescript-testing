@@ -4,6 +4,6 @@ exports[`Title Renders correctly 1`] = `
 <title>
   Home Page
    | 
-  Developers Funny
+  GatsbyJS TypeScript Testing
 </title>
 `;
