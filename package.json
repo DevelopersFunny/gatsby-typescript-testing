@@ -103,13 +103,13 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npx eslint . --max-warnings=0"
+      "eslint --max-warnings=0"
     ],
     "*.{js,jsx,ts,tsx,css,md}": [
-      "npx prettier --write ."
+      "prettier --write"
     ],
-    "*.test.{ts,tsx}": [
-      "npx jest --watchAll=false --bail"
+    "*.{ts,tsx}": [
+      "jest --findRelatedTests --bail"
     ]
   }
 }

@@ -7,7 +7,7 @@ export default function NotFoundPage() {
 
   return (
     <Layout pageTitle={pageTitle}>
-      <h1 data-testid="not-found" className="decoration-pink-500">
+      <h1 data-testid="not-found" className="decoration-red-500">
         Pagina no encontrada
       </h1>
       <p className="subpixel-antialiased">
