@@ -1,4 +1,4 @@
-// @ts-nocheck
+//@ts-nocheck
 import path from 'path'
 import initStoryshots, {
   Stories2SnapsConverter,

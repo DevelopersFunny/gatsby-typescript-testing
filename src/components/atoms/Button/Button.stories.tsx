@@ -1,19 +1,30 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { expect } from '@storybook/jest'
+import { userEvent, waitFor, within } from '@storybook/testing-library'
 import { Button } from '.'
 
 export default {
   title: 'Atoms/Button',
   component: Button,
+  parameters: {
+    fileName: __filename,
+  },
   argTypes: {
     backgroundColor: { control: 'color' },
     textColor: { control: 'color' },
+    onClick: { action: true },
   },
 } as ComponentMeta<typeof Button>
 
 const Template: ComponentStory<typeof Button> = args => <Button {...args} />
 
 export const Contained = Template.bind({})
+Contained.play = async ({ args, canvasElement }) => {
+  const canvas = within(canvasElement)
+  await userEvent.click(canvas.getByRole('button'))
+  await waitFor(() => expect(args.onClick).toHaveBeenCalled())
+}
 Contained.args = {
   children: 'Contained Button',
   variant: 'contained',

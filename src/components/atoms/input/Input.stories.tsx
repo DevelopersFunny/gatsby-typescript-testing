@@ -1,15 +1,26 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { userEvent, within } from '@storybook/testing-library'
 import { Input } from '.'
 
 export default {
   title: 'Atoms/Input',
   component: Input,
+  parameters: {
+    fileName: __filename,
+  },
 } as ComponentMeta<typeof Input>
 
 const Template: ComponentStory<typeof Input> = args => <Input {...args} />
 
 export const InputRequired = Template.bind({})
+InputRequired.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+  await userEvent.type(
+    canvas.getByTestId('name'),
+    'Test with storybook like cypress'
+  )
+}
 InputRequired.args = {
   type: 'text',
   id: 'name',

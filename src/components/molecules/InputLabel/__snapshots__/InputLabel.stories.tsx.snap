@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Stories storyshots Atoms/InputLabel Input Label Name 1`] = `
+exports[`Stories storyshots Molecule/InputLabel Input Label Name 1`] = `
 <div
   className="relative"
 >
