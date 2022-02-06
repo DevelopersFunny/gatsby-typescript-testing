@@ -104,7 +104,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md}": [
       "npx eslint . --max-warnings=0",
-      "npx prettier --write"
+      "npx prettier --write",
+      "npx jest --watchAll=false --bail"
     ]
   }
 }
