@@ -33,20 +33,20 @@ export const InputLabel = ({
           htmlFor={id}
           className="
             absolute
-            h-10
-            w-full
-            pl-9 pr-3
             -top-3.5
-            text-gray-600
-            text-sm 
+            h-10
+            w-full pl-9
+            pr-3
+            text-sm
+            text-gray-600 
             transition-all 
-            peer-placeholder-shown:italic
-            peer-placeholder-shown:text-base 
-            peer-placeholder-shown:text-gray-400 
             peer-placeholder-shown:top-2
+            peer-placeholder-shown:text-base 
+            peer-placeholder-shown:italic 
+            peer-placeholder-shown:text-gray-400
             peer-focus:-top-3.5 
-            peer-focus:text-gray-600 
-            peer-focus:text-sm"
+            peer-focus:text-sm 
+            peer-focus:text-gray-600"
         >
           {label}
         </Label>

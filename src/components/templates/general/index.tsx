@@ -10,7 +10,7 @@ interface LayoutProps {
 
 export const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
-    <div className="container generalLayout">
+    <div className="generalLayout container">
       <Title pageTitle={pageTitle} />
       <nav>
         {[
