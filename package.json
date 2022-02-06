@@ -27,7 +27,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "test:coverage": "jest --watchAll --coverage"
+    "test:coverage": "jest --watchAll --coverage",
+    "prepare": "husky install"
   },
   "babelMacros": {
     "twin": {
@@ -81,9 +82,11 @@
     "babel-jest": "27.4.6",
     "babel-preset-gatsby": "2.6.0",
     "gatsby-plugin-postcss": "5.6.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.4.7",
     "jest-puppeteer": "6.0.3",
+    "lint-staged": "^12.3.3",
     "postcss": "8.4.6",
     "postcss-import": "14.0.2",
     "prettier": "2.5.1",
@@ -91,5 +94,11 @@
     "react-test-renderer": "17.0.2",
     "tailwindcss": "3.0.18",
     "twin.macro": "^2.8.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md}": [
+      "eslint",
+      "prettier --write"
+    ]
   }
 }
