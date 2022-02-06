@@ -97,8 +97,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md}": [
-      "eslint",
-      "prettier --write"
+      "npx eslint",
+      "npx prettier --write"
     ]
   }
 }
