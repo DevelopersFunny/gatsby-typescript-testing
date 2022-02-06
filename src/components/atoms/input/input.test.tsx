@@ -2,7 +2,6 @@ import React from 'react'
 import * as stories from './Input.stories'
 import { composeStories } from '@storybook/testing-react'
 import { render, screen } from '@testing-library/react'
-import { type } from 'os'
 
 const {
   InputRequired,

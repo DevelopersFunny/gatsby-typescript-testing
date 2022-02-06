@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   transform: {
     '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.js',
