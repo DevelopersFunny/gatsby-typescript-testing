@@ -2,9 +2,10 @@ import React from 'react'
 import * as stories from './Button.stories'
 import { composeStories } from '@storybook/testing-react'
 import { render, screen } from '@testing-library/react'
-import { matchers } from '@emotion/jest'
+import { createSerializer, matchers } from '@emotion/jest'
 
 expect.extend(matchers)
+expect.addSnapshotSerializer(createSerializer())
 
 /**
  * Every component that is returned maps 1:1 with the stories,
@@ -32,6 +33,7 @@ describe('Button render with props', () => {
     render(<Contained />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Contained.args?.children)
+    expect(ButtonElement).toMatchSnapshot()
     expect(ButtonElement).toHaveStyleRule(
       'background-color',
       'rgba(37, 99, 235, var(--tw-bg-opacity))'

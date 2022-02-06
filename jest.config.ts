@@ -27,4 +27,7 @@ export default {
   preset: 'jest-puppeteer',
   setupFilesAfterEnv: ['<rootDir>/setup-test-env.js'],
   testEnvironment: 'jsdom',
+  snapshotSerializers: [
+    '@emotion/jest/serializer' /* if needed other snapshotSerializers should go here */,
+  ],
 }
