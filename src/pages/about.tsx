@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/templates/General'
+import Layout from '../components/templates/GeneralLayout'
 
 export default function AboutPage() {
   const pageTitle = 'Acerca de'
