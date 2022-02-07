@@ -1,11 +1,7 @@
 import React from 'react'
-import { Input, IInputProps } from '../../atoms/input'
+import { IInputLabelProps } from '../../../types/components/input'
+import { Input } from '../../atoms/input'
 import { Label } from '../../atoms/Label'
-
-interface IInputLabelProps extends IInputProps {
-  label: string
-  type: 'text' | 'email' | 'password' | 'number'
-}
 
 export const InputLabel = ({
   id,
@@ -15,6 +11,7 @@ export const InputLabel = ({
   type,
   label,
   disabled,
+  onChange,
 }: IInputLabelProps) => {
   return (
     <>
@@ -28,6 +25,7 @@ export const InputLabel = ({
           maxLength={maxLength}
           className="peer"
           disabled={disabled}
+          onChange={onChange}
         />
         <Label
           htmlFor={id}

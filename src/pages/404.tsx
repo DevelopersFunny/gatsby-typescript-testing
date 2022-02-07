@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/templates/general'
+import Layout from '../components/templates/General'
 
 export default function NotFoundPage() {
   const pageTitle = '404'

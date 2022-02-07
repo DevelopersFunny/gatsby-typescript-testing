@@ -16,16 +16,27 @@ const Template: ComponentStory<typeof InputLabel> = args => (
 )
 
 export const InputLabelName = Template.bind({})
-InputLabelName.play = async ({ canvasElement }) => {
+InputLabelName.args = {
+  name: 'inputLabel',
+  id: 'inputLabel',
+  type: 'text',
+  label: 'Input label',
+}
+
+export const InputLabelFilled = Template.bind({})
+InputLabelFilled.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
   await userEvent.type(
-    canvas.getByTestId('inputlabel'),
-    'Test with storybook like cypress'
+    canvas.getByTestId('inputFilled'),
+    'Test with storybook like cypress',
+    {
+      delay: 100,
+    }
   )
 }
-InputLabelName.args = {
-  name: 'inputlabel',
-  id: 'inputlabel',
+InputLabelFilled.args = {
+  name: 'inputFilled',
+  id: 'inputFilled',
   type: 'text',
   label: 'Input label',
 }

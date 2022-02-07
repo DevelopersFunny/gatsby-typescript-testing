@@ -1,35 +1,8 @@
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, StaticQuery } from 'gatsby'
-
-interface ISeoProps {
-  description?: string
-  lang?: string
-  meta?: Array<{ name: string; content: string }>
-}
-interface ILayoutProps extends ISeoProps {
-  pageTitle: string
-  siteTitle?: string
-  data?: {
-    site: {
-      siteMetadata?: {
-        title: string
-        description: string
-        author: string
-      }
-    }
-  }
-}
-
-interface ILayoutQuery {
-  site: {
-    siteMetadata?: {
-      title: string
-      description: string
-      author: string
-    }
-  }
-}
+import { ILayoutProps } from '../../../types/layout'
+import { IMetaQuery } from '../../../types/graphql/meta'
 
 export const PureTitle: FC<ILayoutProps> = ({
   data,
@@ -40,7 +13,7 @@ export const PureTitle: FC<ILayoutProps> = ({
   meta = [],
 }) => {
   if (!data?.site.siteMetadata) {
-    throw new Error('El sitio no tiene los Metadatos completos')
+    throw new Error('El sitio no tiene los MetaDatos completos')
   }
   siteTitle = data.site.siteMetadata.title
   const metaDescription: string =
@@ -98,7 +71,7 @@ export const PureTitle: FC<ILayoutProps> = ({
 
 export default function Title({ pageTitle }: ILayoutProps) {
   return (
-    <StaticQuery<ILayoutQuery>
+    <StaticQuery<IMetaQuery>
       query={graphql`
         query {
           site {

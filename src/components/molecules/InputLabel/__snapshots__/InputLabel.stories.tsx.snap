@@ -1,20 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Stories storyshots Molecule/InputLabel Input Label Filled 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="peer css-1xsr6mf"
+    data-testid="inputFilled"
+    id="inputFilled"
+    name="inputFilled"
+    placeholder="Input label"
+    type="text"
+  />
+  <label
+    className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+    htmlFor="inputFilled"
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "color": undefined,
+      }
+    }
+  >
+    Input label
+  </label>
+</div>
+`;
+
 exports[`Stories storyshots Molecule/InputLabel Input Label Name 1`] = `
 <div
   className="relative"
 >
   <input
     className="peer css-1xsr6mf"
-    data-testid="inputlabel"
-    id="inputlabel"
-    name="inputlabel"
+    data-testid="inputLabel"
+    id="inputLabel"
+    name="inputLabel"
     placeholder="Input label"
     type="text"
   />
   <label
     className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
-    htmlFor="inputlabel"
+    htmlFor="inputLabel"
     style={
       Object {
         "backgroundColor": undefined,

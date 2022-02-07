@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Stories storyshots Atoms/Button Button Click 1`] = `
+<button
+  className="css-1mkuulw"
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "color": undefined,
+    }
+  }
+>
+  ClickEv Button
+</button>
+`;
+
 exports[`Stories storyshots Atoms/Button Contained 1`] = `
 <button
   className="css-1mkuulw"
@@ -25,20 +39,6 @@ exports[`Stories storyshots Atoms/Button Custom Background Color 1`] = `
   }
 >
   Custom Color
-</button>
-`;
-
-exports[`Stories storyshots Atoms/Button Custom Text 1`] = `
-<button
-  className="css-1mkuulw"
-  style={
-    Object {
-      "backgroundColor": undefined,
-      "color": undefined,
-    }
-  }
->
-  Custom text
 </button>
 `;
 

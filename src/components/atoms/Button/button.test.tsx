@@ -2,10 +2,6 @@ import React from 'react'
 import * as stories from './Button.stories'
 import { composeStories } from '@storybook/testing-react'
 import { render, screen } from '@testing-library/react'
-import { createSerializer, matchers } from '@emotion/jest'
-
-expect.extend(matchers)
-expect.addSnapshotSerializer(createSerializer())
 
 /**
  * Every component that is returned maps 1:1 with the stories,
@@ -23,21 +19,18 @@ const {
   Small,
   Normal,
   Large,
-  CustomText,
   CustomBackgroundColor,
   CustomTextColor,
 } = composeStories(stories)
 
+/**
+ * Tests
+ */
 describe('Button render with props', () => {
   it('should render contained button', () => {
     render(<Contained />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Contained.args?.children)
-    expect(ButtonElement).toMatchSnapshot()
-    expect(ButtonElement).toHaveStyleRule(
-      'background-color',
-      'rgba(37, 99, 235, var(--tw-bg-opacity))'
-    )
     expect(ButtonElement).toHaveTextContent(/contained/i)
   })
   it('should render text button', () => {
@@ -97,11 +90,6 @@ describe('Button render with props', () => {
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Large.args?.children)
     expect(ButtonElement).toHaveTextContent(/large/i)
-  })
-  it('should render a custom children button', () => {
-    render(<CustomText children="Custom text" />)
-    const ButtonElement = screen.getByRole('button')
-    expect(ButtonElement).toHaveTextContent(/custom text/i)
   })
   it('should render a custom background color button', () => {
     render(<CustomBackgroundColor backgroundColor="blue" />)

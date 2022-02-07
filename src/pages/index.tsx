@@ -8,7 +8,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import Layout from '../components/templates/general'
+import Layout from '../components/templates/General'
 import { Button } from '../components/atoms/Button'
 import logo from '../images/logo.svg'
 import tw, { css, styled } from 'twin.macro'
