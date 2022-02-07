@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 import { Link } from 'gatsby'
 import GlobalStyles from '../../../styles/GlobalStyles'
 import Title from '../../atoms/Title'
-import Seo from '../../atoms/Seo'
 
 interface LayoutProps {
   pageTitle: string
@@ -11,8 +10,7 @@ interface LayoutProps {
 
 export const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
-    <div className="container generalLayout">
-      <Seo title={pageTitle} />
+    <div className="generalLayout container">
       <Title pageTitle={pageTitle} />
       <nav>
         {[

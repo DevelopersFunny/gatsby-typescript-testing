@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   transform: {
     '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.js',
@@ -11,7 +12,7 @@ export default {
   globals: {
     __PATH_PREFIX__: ``,
   },
-  // roots: ['<rootDir>/src/components/'],
+  roots: ['<rootDir>/src'],
   testURL: `http://localhost`,
   setupFiles: [`<rootDir>/loadershim.js`],
   clearMocks: true,
@@ -22,9 +23,11 @@ export default {
     '!**/*.stories.{js,jsx,ts,tsx}',
   ],
   coverageDirectory: 'coverage',
-  reporters: ['default', 'jest-screenshot/reporter'],
-  modulePathIgnorePatterns: ['node_modules', 'jest-test-results.json'],
+  modulePathIgnorePatterns: ['node_modules'],
   preset: 'jest-puppeteer',
   setupFilesAfterEnv: ['<rootDir>/setup-test-env.js'],
   testEnvironment: 'jsdom',
+  snapshotSerializers: [
+    '@emotion/jest/serializer' /* if needed other snapshotSerializers should go here */,
+  ],
 }

@@ -1,4 +1,4 @@
-// @ts-nocheck
+//@ts-nocheck
 import path from 'path'
 import initStoryshots, {
   Stories2SnapsConverter,
@@ -29,7 +29,26 @@ initStoryshots({
 const getMatchOptions = ({ context: { fileName } }) => {
   // Generates a custom path based on the file name and the custom directory.
   const snapshotPath = path.join(path.dirname(fileName), '__image_snapshots__')
-  return { customSnapshotsDir: snapshotPath }
+  return {
+    customSnapshotsDir: snapshotPath,
+    failureThreshold: 0.1,
+    failureThresholdType: 'percent',
+  }
+}
+
+const beforeScreenshot = (page, { context: { kind, story }, url }) => {
+  return new Promise(resolve =>
+    setTimeout(() => {
+      resolve()
+    }, 600)
+  )
+}
+const afterScreenshot = ({ image, context }) => {
+  return new Promise(resolve =>
+    setTimeout(() => {
+      resolve()
+    }, 600)
+  )
 }
 
 /**
@@ -37,5 +56,5 @@ const getMatchOptions = ({ context: { fileName } }) => {
  */
 initStoryshots({
   suite: 'Image storyshots',
-  test: imageSnapshot({ getMatchOptions }),
+  test: imageSnapshot({ getMatchOptions, beforeScreenshot, afterScreenshot }),
 })

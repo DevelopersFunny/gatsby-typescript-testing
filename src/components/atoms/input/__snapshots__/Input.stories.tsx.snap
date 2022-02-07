@@ -1,103 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonProperties Atoms/Input Input Checkbox 1`] = `
+exports[`Stories storyshots Atoms/Input Input Args Required 1`] = `
 <input
   className="css-16xa3tr"
-  id="name"
-  name="name"
-  type="checkbox"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input File 1`] = `
-<input
-  className="css-44zl3k"
-  id="name"
-  name="name"
-  type="file"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Filled 1`] = `
-<input
-  className="css-p4oc1c"
-  id="name"
-  name="name"
-  placeholder="Please write a placeholder"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Max Length 1`] = `
-<input
-  className="css-1xsr6mf"
-  id="name"
-  maxLength={8}
-  name="name"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Min Length 1`] = `
-<input
-  className="css-1xsr6mf"
-  id="name"
-  minLength={4}
-  name="name"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Outlined 1`] = `
-<input
-  className="css-6ui80c"
-  id="name"
-  name="name"
-  placeholder="Please write a placeholder"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Placeholder 1`] = `
-<input
-  className="css-16xa3tr"
-  id="name"
-  name="name"
-  placeholder="Please write a placeholder"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Radio 1`] = `
-<input
-  className="css-16xa3tr"
-  id="name"
-  name="name"
-  type="radio"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Range 1`] = `
-<input
-  className="css-16xa3tr"
-  id="name"
-  name="name"
-  type="range"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Required 1`] = `
-<input
-  className="css-1xsr6mf"
-  id="name"
-  name="name"
-  type="text"
-/>
-`;
-
-exports[`ButtonProperties Atoms/Input Input Standard 1`] = `
-<input
-  className="css-16xa3tr"
+  data-testid="name"
   id="name"
   name="name"
   placeholder="Please write a placeholder"
@@ -108,8 +14,9 @@ exports[`ButtonProperties Atoms/Input Input Standard 1`] = `
 exports[`Stories storyshots Atoms/Input Input Checkbox 1`] = `
 <input
   className="css-16xa3tr"
-  id="name"
-  name="name"
+  data-testid="checkbox"
+  id="checkbox"
+  name="checkbox"
   type="checkbox"
 />
 `;
@@ -117,8 +24,9 @@ exports[`Stories storyshots Atoms/Input Input Checkbox 1`] = `
 exports[`Stories storyshots Atoms/Input Input File 1`] = `
 <input
   className="css-44zl3k"
-  id="name"
-  name="name"
+  data-testid="file"
+  id="file"
+  name="file"
   type="file"
 />
 `;
@@ -126,6 +34,7 @@ exports[`Stories storyshots Atoms/Input Input File 1`] = `
 exports[`Stories storyshots Atoms/Input Input Filled 1`] = `
 <input
   className="css-p4oc1c"
+  data-testid="name"
   id="name"
   name="name"
   placeholder="Please write a placeholder"
@@ -133,19 +42,20 @@ exports[`Stories storyshots Atoms/Input Input Filled 1`] = `
 />
 `;
 
-exports[`Stories storyshots Atoms/Input Input Min Length 1`] = `
+exports[`Stories storyshots Atoms/Input Input Number 1`] = `
 <input
-  className="css-1xsr6mf"
-  id="name"
-  minLength={4}
-  name="name"
-  type="text"
+  className="css-16xa3tr"
+  data-testid="number"
+  id="number"
+  name="number"
+  type="number"
 />
 `;
 
 exports[`Stories storyshots Atoms/Input Input Outlined 1`] = `
 <input
   className="css-6ui80c"
+  data-testid="name"
   id="name"
   name="name"
   placeholder="Please write a placeholder"
@@ -153,21 +63,23 @@ exports[`Stories storyshots Atoms/Input Input Outlined 1`] = `
 />
 `;
 
-exports[`Stories storyshots Atoms/Input Input Placeholder 1`] = `
+exports[`Stories storyshots Atoms/Input Input Password 1`] = `
 <input
-  className="css-16xa3tr"
-  id="name"
-  name="name"
-  placeholder="Please write a placeholder"
-  type="text"
+  className="css-1xsr6mf"
+  data-testid="password"
+  id="password"
+  name="password"
+  placeholder="Password"
+  type="password"
 />
 `;
 
 exports[`Stories storyshots Atoms/Input Input Radio 1`] = `
 <input
   className="css-16xa3tr"
-  id="name"
-  name="name"
+  data-testid="radio"
+  id="radio"
+  name="radio"
   type="radio"
 />
 `;
@@ -175,25 +87,20 @@ exports[`Stories storyshots Atoms/Input Input Radio 1`] = `
 exports[`Stories storyshots Atoms/Input Input Range 1`] = `
 <input
   className="css-16xa3tr"
-  id="name"
-  name="name"
+  data-testid="range"
+  id="range"
+  name="range"
   type="range"
-/>
-`;
-
-exports[`Stories storyshots Atoms/Input Input Required 1`] = `
-<input
-  className="css-1xsr6mf"
-  id="name"
-  name="name"
-  type="text"
 />
 `;
 
 exports[`Stories storyshots Atoms/Input Input Standard 1`] = `
 <input
   className="css-16xa3tr"
+  data-testid="name"
   id="name"
+  maxLength={8}
+  minLength={4}
   name="name"
   placeholder="Please write a placeholder"
   type="text"

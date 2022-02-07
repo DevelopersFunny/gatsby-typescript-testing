@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-redeclare */
 import React, {
   createContext,
   ReactElement,
@@ -7,7 +8,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import Layout from '../components/templates/general'
+import Layout from '../components/templates/GeneralLayout'
 import { Button } from '../components/atoms/Button'
 import logo from '../images/logo.svg'
 import tw, { css, styled } from 'twin.macro'

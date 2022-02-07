@@ -8,7 +8,10 @@ describe('Title', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: 'Developers Funny',
+          title: 'GatsbyJS TypeScript Testing',
+          description:
+            'A project with React GatsbyJS and TypeScript with Testing using Atomic Design',
+          author: 'Developers Funny',
         },
       },
     }
