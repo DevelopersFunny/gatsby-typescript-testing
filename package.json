@@ -28,7 +28,7 @@
     "build-storybook": "build-storybook",
     "test": "jest",
     "test:coverage": "jest --watchAll --coverage",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
+    "prepare": "husky install"
   },
   "babelMacros": {
     "twin": {
@@ -38,7 +38,7 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "gatsby": "4.6.0",
+    "gatsby": "4.6.2",
     "gatsby-plugin-emotion": "^7.6.0",
     "gatsby-plugin-image": "2.6.0",
     "gatsby-plugin-manifest": "4.6.0",
@@ -54,40 +54,63 @@
     "typescript": "4.5.5"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "6.4.14",
-    "@storybook/addon-actions": "6.4.14",
-    "@storybook/addon-essentials": "6.4.14",
-    "@storybook/addon-jest": "6.4.14",
-    "@storybook/addon-links": "6.4.14",
+    "@emotion/jest": "^11.7.1",
+    "@storybook/addon-a11y": "6.4.18",
+    "@storybook/addon-actions": "6.4.18",
+    "@storybook/addon-essentials": "6.4.18",
+    "@storybook/addon-interactions": "^6.4.18",
+    "@storybook/addon-links": "6.4.18",
     "@storybook/addon-postcss": "2.0.0",
-    "@storybook/builder-webpack5": "6.4.14",
-    "@storybook/manager-webpack5": "6.4.14",
-    "@storybook/react": "6.4.14",
-    "@storybook/testing-react": "1.2.3",
-    "@testing-library/jest-dom": "5.16.1",
+    "@storybook/addon-storyshots": "^6.4.18",
+    "@storybook/addon-storyshots-puppeteer": "^6.4.18",
+    "@storybook/builder-webpack5": "6.4.18",
+    "@storybook/jest": "^0.0.6",
+    "@storybook/manager-webpack5": "6.4.18",
+    "@storybook/react": "6.4.18",
+    "@storybook/testing-library": "^0.0.9",
+    "@storybook/testing-react": "^1.2.3",
+    "@testing-library/jest-dom": "5.16.2",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "13.5.0",
     "@types/jest": "27.4.0",
-    "@types/node": "17.0.12",
+    "@types/node": "17.0.15",
     "@types/puppeteer": "5.4.4",
-    "@types/react": "17.0.38",
+    "@types/react": "17.0.39",
     "@types/react-dom": "17.0.11",
     "@types/react-helmet": "6.1.5",
     "@types/react-test-renderer": "17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
     "autoprefixer": "10.4.2",
-    "babel-jest": "27.4.6",
-    "babel-preset-gatsby": "2.6.0",
+    "babel-jest": "27.5.0",
+    "eslint": "^8.8.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "gatsby-plugin-eslint": "^4.0.2",
     "gatsby-plugin-postcss": "5.6.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "27.4.7",
-    "jest-puppeteer": "6.0.3",
-    "jest-screenshot": "0.3.5",
-    "postcss": "8.4.5",
+    "jest": "27.5.0",
+    "jest-puppeteer": "6.1.0",
+    "lint-staged": "^12.3.3",
+    "postcss": "8.4.6",
     "postcss-import": "14.0.2",
     "prettier": "2.5.1",
-    "puppeteer": "13.1.2",
+    "prettier-plugin-tailwindcss": "^0.1.5",
+    "puppeteer": "3.3.0",
     "react-test-renderer": "17.0.2",
-    "tailwindcss": "3.0.16",
+    "tailwindcss": "3.0.18",
     "twin.macro": "^2.8.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0"
+    ],
+    "*.{js,jsx,ts,tsx,css,md}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "jest --watchAll=false --findRelatedTests --bail"
+    ]
   }
 }

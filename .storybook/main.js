@@ -1,10 +1,9 @@
 module.exports = {
   stories: [
-    '../src/**/*.stories.mdx',
+    '../src/components/**/*.stories.mdx',
     '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
-    '@storybook/addon-a11y',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     {
@@ -15,7 +14,8 @@ module.exports = {
         },
       },
     },
-    '@storybook/addon-jest',
+    '@storybook/addon-a11y',
+    '@storybook/addon-interactions',
   ],
   framework: '@storybook/react',
   core: {

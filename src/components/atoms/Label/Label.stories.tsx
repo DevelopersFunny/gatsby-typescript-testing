@@ -5,6 +5,9 @@ import { Label } from '.'
 export default {
   title: 'Atoms/Label',
   component: Label,
+  parameters: {
+    fileName: __filename,
+  },
   argTypes: {
     backgroundColor: { control: 'color' },
     textColor: { control: 'color' },

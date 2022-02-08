@@ -35,18 +35,19 @@
 
 5.  **Realiza las pruebas con Jest, React Testing Library y Puppeteer**
 
-    Navega hasta el directorio de tu sitio y ejecuta el comando para realizar las pruebas de Jest y RTL de tus componentes de Storybook, también te generara la carpeta coverage con un index.html en el cual podrás revisar los avances de tus pruebas.
+    Navega hasta el directorio de tu sitio y ejecuta el comando para realizar las pruebas de Jest y RTL de cada uno tus componentes de Storybook, esto te generara dos carpetas, una para los snapshots de tu código de stories y otra para los snapshots de las imágenes.
     **_Toma en cuenta que en este punto se pueden realizar capturas de pantalla de tus componentes haciendo uso de Puppeteer, por lo que tendrás que tener iniciado en una consola Storybook_**
 
     ```shell
     cd my-react-gatsby-testing-site/
-    npm run test:generate-output
+    npm run test
     ```
 
 6.  **Revisa el avance del código cubierto por las pruebas**
 
     Navega hasta el directorio de tu sitio y ejecuta el comando para revisar que todo tu código ha sido cubierto por las pruebas de Jest y RTL, de cada uno de tus componentes de Storybook.
-    **_En este punto tendrás el watch de Jest en todo momento para revisar todos los cambios que hagas_**
+    **_Necesitas tener storybook ejecutándose en todo momento al realizar las pruebas para que no fallen, en casi de tener archivos con extension .stories.[jt]sx, si no las tienes y no vas a usarlo puedes borrar también archivo Storyshots.test.tsx que se encuentra en raíz_**
+    **_En este punto tendrás el watch de Jest en todo momento, para revisar todos los cambios que hagas cada que guardas el archivo que estés modificando_**
 
     ```shell
     cd my-react-gatsby-testing-site/
