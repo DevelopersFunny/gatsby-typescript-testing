@@ -10,10 +10,10 @@
     @apply underline;
   }
   nav {
-    @apply flex justify-center pb-8 space-x-4;
+    @apply flex justify-center space-x-4 pb-8;
   }
   nav a {
-    @apply font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900;
+    @apply rounded-lg px-3 py-2 font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900;
   }
   /*input {
     @apply placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm;
@@ -22,7 +22,7 @@
 
 @layer components {
   .codeStyles {
-    @apply text-amber-300 bg-amber-50 rounded text-xl p-4;
+    @apply rounded bg-amber-50 p-4 text-xl text-amber-300;
   }
 
   .App-logo {
@@ -45,38 +45,38 @@
   }
 
   .card {
-    @apply max-w-md mx-auto overflow-hidden md:max-w-full;
+    @apply mx-auto max-w-md overflow-hidden md:max-w-full;
   }
 
   .pre-card-image {
-    @apply md:shrink-0 md:hidden;
+    @apply md:hidden md:shrink-0;
   }
   .pre-card-image img {
-    @apply h-48 w-48 object-cover md:h-full md:w-full rounded-full;
+    @apply h-48 w-48 rounded-full object-cover md:h-full md:w-full;
   }
 
   .post-card-image {
-    @apply flex-auto md:shrink-0 hidden md:inline-flex;
+    @apply hidden flex-auto md:inline-flex md:shrink-0;
   }
   .post-card-image img {
-    @apply object-cover md:w-64 lg:w-72 xl:max-w-xl rounded-full;
+    @apply rounded-full object-cover md:w-64 lg:w-72 xl:max-w-xl;
   }
 
   .card-content {
-    @apply flex-auto p-6 lg:p-8 self-center;
+    @apply flex-auto self-center p-6 lg:p-8;
   }
   .title {
-    @apply uppercase tracking-wide text-sm font-semibold text-blue-600;
+    @apply text-sm font-semibold uppercase tracking-wide text-blue-600;
   }
   .subtitle {
-    @apply mt-1 text-lg leading-tight font-medium text-black;
+    @apply mt-1 text-lg font-medium leading-tight text-black;
   }
   .text-content {
     @apply mt-2 text-gray-500;
   }
 
   .card-footer {
-    @apply grid grid-cols-1 gap-4 py-8 justify-center;
+    @apply grid grid-cols-1 justify-center gap-4 py-8;
   }
   .card-footer div {
     @apply col-start-1 space-x-6 text-center;
@@ -85,15 +85,15 @@
 
 @layer utilities {
   .success {
-    @apply text-white bg-green-700 hover:bg-green-600 active:bg-green-800 focus:bg-green-700/90 ring-green-600 !important;
+    @apply bg-green-700 text-white ring-green-600 hover:bg-green-600 focus:bg-green-700/90 active:bg-green-800 !important;
   }
   .warning {
-    @apply text-white bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-700 focus:bg-yellow-700/90 ring-yellow-600 !important;
+    @apply bg-yellow-700 text-white ring-yellow-600 hover:bg-yellow-600 focus:bg-yellow-700/90 active:bg-yellow-700 !important;
   }
   .error {
-    @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-600 focus:bg-red-700/90 ring-red-700 !important;
+    @apply bg-red-600 text-white ring-red-700 hover:bg-red-700 focus:bg-red-700/90 active:bg-red-600 !important;
   }
   .secondary {
-    @apply text-white bg-gray-600 hover:bg-gray-700 active:bg-gray-600 focus:bg-gray-600/90 ring-gray-700 !important;
+    @apply bg-gray-600 text-white ring-gray-700 hover:bg-gray-700 focus:bg-gray-600/90 active:bg-gray-600 !important;
   }
 }

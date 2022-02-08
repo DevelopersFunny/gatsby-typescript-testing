@@ -1,6 +1,4 @@
 import '../src/styles/global.css' // Tailwindcss
-import { withTests } from '@storybook/addon-jest'
-import results from '../.jest-test-results.json'
 import { action } from '@storybook/addon-actions'
 
 // Gatsby's Link overrides:
@@ -30,9 +28,3 @@ export const parameters = {
     },
   },
 }
-
-export const decorators = [
-  withTests({
-    results,
-  }),
-]

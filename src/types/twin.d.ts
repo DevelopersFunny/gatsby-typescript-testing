@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import 'twin.macro'
 import { css as cssImport } from '@emotion/react'
 import { CSSInterpolation } from '@emotion/serialize'
