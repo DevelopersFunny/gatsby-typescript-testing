@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories storyshots Atoms/Input Input Args Required 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="name"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Checkbox 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="checkbox"
+  id="checkbox"
+  name="checkbox"
+  type="checkbox"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input File 1`] = `
+<input
+  className="css-44zl3k"
+  data-testid="file"
+  id="file"
+  name="file"
+  type="file"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Filled 1`] = `
+<input
+  className="css-p4oc1c"
+  data-testid="name"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Number 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="number"
+  id="number"
+  name="number"
+  type="number"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Outlined 1`] = `
+<input
+  className="css-6ui80c"
+  data-testid="name"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Password 1`] = `
+<input
+  className="css-1xsr6mf"
+  data-testid="password"
+  id="password"
+  name="password"
+  placeholder="Password"
+  type="password"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Radio 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="radio"
+  id="radio"
+  name="radio"
+  type="radio"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Range 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="range"
+  id="range"
+  name="range"
+  type="range"
+/>
+`;
+
+exports[`Stories storyshots Atoms/Input Input Standard 1`] = `
+<input
+  className="css-16xa3tr"
+  data-testid="name"
+  id="name"
+  maxLength={8}
+  minLength={4}
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;

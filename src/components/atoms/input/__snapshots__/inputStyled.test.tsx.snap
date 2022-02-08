@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input render with props styles should render input styles 1`] = `
+.emotion-0 {
+  height: 2.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.25rem;
+  padding-right: 0.75rem;
+  display: block;
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
+.emotion-0::-webkit-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0:-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0::placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 640px) {
+  .emotion-0 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-0::-webkit-input-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0::-moz-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0:-ms-input-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0::placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+}
+
+.emotion-0 {
+  height: 2.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.25rem;
+  padding-right: 0.75rem;
+  display: block;
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
+.emotion-0::-webkit-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0:-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+.emotion-0::placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 640px) {
+  .emotion-0 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-0::-webkit-input-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0::-moz-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0:-ms-input-placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0::placeholder {
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.emotion-0:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
+}
+
+<input
+  class="emotion-0"
+  data-testid="name"
+  id="name"
+  name="name"
+  placeholder="Please write a placeholder"
+  type="text"
+/>
+`;

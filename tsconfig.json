@@ -18,7 +18,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     // "sourceMap": true,
-    // "pretty": true,
+    "pretty": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
     // "noImplicitAny": false

@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories storyshots Organism/Form Empty Form 1`] = `
+<form>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="firstName"
+        id="firstName"
+        name="firstName"
+        placeholder="First Name"
+        type="text"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="firstName"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        First Name
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        type="email"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="email"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        Email
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="password"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        Password
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <button
+      className="css-1mkuulw"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "color": undefined,
+        }
+      }
+    >
+      Login
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Stories storyshots Organism/Form Filled Form 1`] = `
+<form>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="firstName"
+        id="firstName"
+        name="firstName"
+        placeholder="First Name"
+        type="text"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="firstName"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        First Name
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        type="email"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="email"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        Email
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <div
+      className="relative"
+    >
+      <input
+        className="peer css-1xsr6mf"
+        data-testid="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <label
+        className=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 css-72egtx"
+        htmlFor="password"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "color": undefined,
+          }
+        }
+      >
+        Password
+      </label>
+    </div>
+  </div>
+  <div
+    className="px-2 py-2"
+  >
+    <button
+      className="css-1mkuulw"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "color": undefined,
+        }
+      }
+    >
+      Login
+    </button>
+  </div>
+</form>
+`;

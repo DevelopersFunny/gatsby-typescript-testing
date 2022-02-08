@@ -1,22 +1,6 @@
-import React, { ReactNode } from 'react'
-import tw, { styled } from 'twin.macro'
-
-export interface ILabelProps {
-  className?: string
-  backgroundColor?: string
-  textColor?: string
-  htmlFor?: string
-  children?: ReactNode
-}
-
-const StyledLabel = styled.label([
-  tw`
-    block
-    text-sm
-    font-medium
-    text-gray-700
-  `,
-])
+import React from 'react'
+import { ILabelProps } from '../../../types/components/label'
+import { StyledLabel } from './labelStyled'
 
 export function Label({
   backgroundColor,

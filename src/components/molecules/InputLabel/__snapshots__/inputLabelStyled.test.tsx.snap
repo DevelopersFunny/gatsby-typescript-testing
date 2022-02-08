@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input render with props should render input 1`] = `
+.emotion-0 {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.emotion-0 {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+<label
+  class=" absolute -top-3.5 h-10 w-full pl-9 pr-3 text-sm text-gray-600  transition-all  peer-placeholder-shown:top-2 peer-placeholder-shown:text-base  peer-placeholder-shown:italic  peer-placeholder-shown:text-gray-400 peer-focus:-top-3.5  peer-focus:text-sm  peer-focus:text-gray-600 emotion-0"
+  for="test"
+>
+  Input Label
+</label>
+`;

@@ -1,48 +1,84 @@
-import { graphql, StaticQuery } from 'gatsby'
 import React, { FC } from 'react'
+import { Helmet } from 'react-helmet'
+import { graphql, StaticQuery } from 'gatsby'
+import { ILayoutProps } from '../../../types/layout'
+import { IMetaQuery } from '../../../types/graphql/meta'
 
-interface LayoutProps {
-  pageTitle: string
-  siteTitle?: string
-  data?: {
-    site: {
-      siteMetadata?: {
-        title: string
-      }
-    }
-  }
-}
-
-interface LayoutQuery {
-  site: {
-    siteMetadata?: {
-      title: string
-    }
-  }
-}
-
-const PureTitle: FC<LayoutProps> = ({ data, pageTitle, siteTitle }) => {
-  /* istanbul ignore next */
+export const PureTitle: FC<ILayoutProps> = ({
+  data,
+  pageTitle,
+  siteTitle,
+  description = '',
+  lang = 'es',
+  meta = [],
+}) => {
   if (!data?.site.siteMetadata) {
-    throw new Error('El sitio no tiene los Metadatos completos')
+    throw new Error('El sitio no tiene los MetaDatos completos')
   }
   siteTitle = data.site.siteMetadata.title
+  const metaDescription: string =
+    description || data.site.siteMetadata.description
 
   return (
-    <title>
-      {pageTitle} | {siteTitle}
-    </title>
+    <>
+      <Helmet
+        htmlAttributes={{
+          lang,
+        }}
+        title={pageTitle}
+        titleTemplate={siteTitle ? `%s | ${siteTitle}` : ''}
+        meta={[
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:title`,
+            content: pageTitle,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: data.site.siteMetadata?.author || ``,
+          },
+          {
+            name: `twitter:title`,
+            content: pageTitle,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+        ].concat(meta)}
+      />
+      <title>
+        {pageTitle} | {siteTitle}
+      </title>
+    </>
   )
 }
 
-export default function Title({ pageTitle }: LayoutProps) {
+export default function Title({ pageTitle }: ILayoutProps) {
   return (
-    <StaticQuery<LayoutQuery>
+    <StaticQuery<IMetaQuery>
       query={graphql`
         query {
           site {
             siteMetadata {
               title
+              description
+              author
             }
           }
         }
