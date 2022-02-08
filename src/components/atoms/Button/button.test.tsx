@@ -2,28 +2,12 @@ import React from 'react'
 import * as stories from './Button.stories'
 import { composeStories } from '@storybook/testing-react'
 import { render, screen } from '@testing-library/react'
-const screenshotTest = require('../../../utils/screenshotTest')
 
-const setup = {
-  'atoms-button': [
-    'contained',
-    'text',
-    'outlined',
-    'secondary',
-    'success',
-    'warning',
-    'error',
-    'small',
-    'normal',
-    'large',
-    'custom-text',
-    'custom-background-color',
-    'custom-text-color',
-  ],
-}
-
-screenshotTest(setup)
-
+/**
+ * Every component that is returned maps 1:1 with the stories,
+ * but they already contain all decorators from story level,
+ * meta level and global level.
+ */
 const {
   Contained,
   Text,
@@ -35,32 +19,31 @@ const {
   Small,
   Normal,
   Large,
-  CustomText,
   CustomBackgroundColor,
   CustomTextColor,
 } = composeStories(stories)
 
+/**
+ * Tests
+ */
 describe('Button render with props', () => {
   it('should render contained button', () => {
     render(<Contained />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Contained.args?.children)
     expect(ButtonElement).toHaveTextContent(/contained/i)
-    expect(ButtonElement).toHaveClass('contained')
   })
   it('should render text button', () => {
     render(<Text />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Text.args?.children)
     expect(ButtonElement).toHaveTextContent(/text/i)
-    expect(ButtonElement).toHaveClass('text')
   })
   it('should render custom outlined button', () => {
     render(<Outlined />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Outlined.args?.children)
     expect(ButtonElement).toHaveTextContent(/outlined/i)
-    expect(ButtonElement).toHaveClass('outlined')
   })
   it('should render secondary button', () => {
     render(<Secondary />)
@@ -95,26 +78,18 @@ describe('Button render with props', () => {
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Small.args?.children)
     expect(ButtonElement).toHaveTextContent(/small/i)
-    expect(ButtonElement).toHaveClass('small')
   })
   it('should render normal button', () => {
     render(<Normal />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Normal.args?.children)
     expect(ButtonElement).toHaveTextContent(/normal/i)
-    expect(ButtonElement).toHaveClass('normal')
   })
   it('should render large button', () => {
     render(<Large />)
     const ButtonElement = screen.getByRole('button')
     expect(ButtonElement.textContent).toEqual(Large.args?.children)
     expect(ButtonElement).toHaveTextContent(/large/i)
-    expect(ButtonElement).toHaveClass('large')
-  })
-  it('should render a custom children button', () => {
-    render(<CustomText children="Custom text" />)
-    const ButtonElement = screen.getByRole('button')
-    expect(ButtonElement).toHaveTextContent(/custom text/i)
   })
   it('should render a custom background color button', () => {
     render(<CustomBackgroundColor backgroundColor="blue" />)

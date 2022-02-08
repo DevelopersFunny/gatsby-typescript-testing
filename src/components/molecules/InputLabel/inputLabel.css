@@ -1,7 +1,0 @@
-.inputStyled {
-  @apply h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-red-600;
-}
-
-.labelStyled {
-  @apply peer-placeholder-shown:uppercase;
-}
